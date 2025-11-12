@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 // Simulated user database (replace with database in production)
@@ -21,8 +21,8 @@ const authController = {
         return res.status(409).json({ message: 'User already exists' });
       }
 
-      // Hash password
-      const hashedPassword = await bcrypt.hash(password, 10);
+  // Hash password (using bcryptjs sync helper)
+  const hashedPassword = bcrypt.hashSync(password, 10);
 
       // Create user
       const newUser = {
@@ -60,8 +60,8 @@ const authController = {
         return res.status(401).json({ message: 'Invalid email or password' });
       }
 
-      // Check password
-      const passwordValid = await bcrypt.compare(password, user.password);
+      // Check password (sync)
+      const passwordValid = bcrypt.compareSync(password, user.password);
       if (!passwordValid) {
         return res.status(401).json({ message: 'Invalid email or password' });
       }
