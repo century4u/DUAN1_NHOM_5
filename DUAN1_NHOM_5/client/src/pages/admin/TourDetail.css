@@ -1,0 +1,405 @@
+.tour-detail {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tour-detail-header {
+  margin-bottom: 30px;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+.tour-detail-header h1 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 32px;
+}
+
+.tour-meta {
+  display: flex;
+  gap: 10px;
+}
+
+.category-badge,
+.status-badge {
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category-domestic {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.category-international {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.category-custom {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-draft {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.tour-detail-tabs {
+  display: flex;
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 20px;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.tab-btn.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.tour-detail-content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+.detail-section {
+  margin-bottom: 40px;
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.info-item label {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+}
+
+.info-item > div {
+  color: #333;
+  font-size: 16px;
+}
+
+.price {
+  color: #007bff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.service-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Itinerary */
+.itinerary-day {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.day-header h3 {
+  margin: 0;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.day-time {
+  color: #666;
+  font-size: 14px;
+}
+
+.itinerary-day h4 {
+  margin: 15px 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.day-location {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.day-description {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.attractions,
+.activities {
+  margin-top: 15px;
+}
+
+.attractions ul,
+.activities ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.attractions li,
+.activities li {
+  padding: 8px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.activity-time {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* Pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.pricing-item {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pricing-item label {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.package-item {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+}
+
+.package-item h4 {
+  margin: 0 0 10px 0;
+  color: #007bff;
+}
+
+/* Policies */
+.policy-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-left: 3px solid #007bff;
+  border-radius: 4px;
+}
+
+/* Suppliers */
+.supplier-item {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+}
+
+.supplier-item h4 {
+  margin: 0 0 15px 0;
+  color: #007bff;
+}
+
+.contact-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dee2e6;
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-info div {
+  margin: 5px 0;
+}
+
+/* Images */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-item {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  color: #666;
+  font-size: 16px;
+}
+
+.error-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.error {
+  color: #dc3545;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-detail-header h1 {
+    font-size: 24px;
+  }
+}
+

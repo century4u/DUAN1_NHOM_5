@@ -9,10 +9,10 @@ const NotFound = () => {
     <div className="not-found-container">
       <div className="not-found-content">
         <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <p>The page you are looking for does not exist.</p>
-        <button onClick={() => navigate('/')} className="btn-home">
-          Go Home
+        <h2>Trang không tìm thấy</h2>
+        <p>Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+        <button className="btn btn-primary" onClick={() => navigate('/')}>
+          Về trang chủ
         </button>
       </div>
     </div>
@@ -20,3 +20,4 @@ const NotFound = () => {
 };
 
 export default NotFound;
+
